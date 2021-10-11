@@ -18,8 +18,8 @@ class CreateProblemsTable extends Migration
             $table->foreignId('poll_id');
             $table->string('title');
             $table->string('description')->nullable();
-            $table->sting('image_url')->nullable();
-            $string->string('type');
+            $table->string('image_url')->nullable();
+            $table->string('type');
             $table->json('content');
             $table->timestamps();
         });

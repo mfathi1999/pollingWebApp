@@ -15,7 +15,7 @@ class CreateProblemAnswersTable extends Migration
     {
         Schema::create('problem_answers', function (Blueprint $table) {
             $table->id();
-            $table->foreingId('poll_answer_id');
+            $table->foreignId('poll_answer_id');
             $table->foreignId('problem_id');
             $table->json('content');
             $table->timestamp('answerd_at');

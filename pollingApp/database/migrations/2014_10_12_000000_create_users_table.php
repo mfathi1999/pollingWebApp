@@ -23,8 +23,10 @@ class CreateUsersTable extends Migration
             $table->string('name')->nullable();
             $table->string('family')->nullable();
             $table->rememberToken();
-            $table->timestamp('joined_at');
-            $table->timestamp('last_login_at');
+            // $table->timestamp('joined_at');
+            // $table->timestamp('last_login_at');
+            $table->timestamps();
+
         });
     }
 
